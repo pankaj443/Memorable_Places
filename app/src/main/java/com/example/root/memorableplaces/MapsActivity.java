@@ -193,6 +193,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 }
 
+            }else{
+
+                if (listAddresses.get(0).getPostalCode() != null)
+                    address += listAddresses.get(0).getPostalCode();
+
+                if (listAddresses.get(0).getLocality() !=null)
+                    address += listAddresses.get(0).getLocality();
             }
 
         } catch (IOException e) {
